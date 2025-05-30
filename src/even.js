@@ -10,6 +10,7 @@ console.log(greeting(userName));
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
 //
 const getRandom = (min = 1, max = 100) => {
+  // nosonar - Math.random acceptable for this non-security context
   return Math.floor(Math.random() * (max - min + 1)) + min;
 };
 // 
